@@ -12,19 +12,19 @@ ADD dovecot.list /etc/apt/sources.list.d
 RUN apt-get -y update && apt-get -y install \
   tini \
   dovecot-core \
-  dovecot-gssapi \
+#  dovecot-gssapi \
   dovecot-imapd \
-  dovecot-ldap \
+#  dovecot-ldap \
   dovecot-lmtpd \
 #  dovecot-lua \
-  dovecot-managesieved \
-  dovecot-mysql \
-  dovecot-pgsql \
-  dovecot-pop3d \
-  dovecot-sieve \
-  dovecot-solr \
-  dovecot-sqlite \
-  dovecot-submissiond \
+#  dovecot-managesieved \
+#  dovecot-mysql \
+#  dovecot-pgsql \
+#  dovecot-pop3d \
+#  dovecot-sieve \
+#  dovecot-solr \
+#  dovecot-sqlite \
+#  dovecot-submissiond \
   ca-certificates \
   ssl-cert && \
   rm -rf /var/lib/apt/lists && \
